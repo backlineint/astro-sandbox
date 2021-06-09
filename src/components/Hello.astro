@@ -1,0 +1,22 @@
+---
+export let name = 'World';
+---
+
+<style>
+  /* Scoped class selector within the component */
+  .scoped {
+    font-weight: bold;
+  }
+
+  /* Scoped element selector within the component */
+  h2 {
+    font-size: 32px;
+  }
+
+  /* Global style */
+  :global(h2) {
+    color: red;
+  }
+</style>
+
+<h2 class="scoped">Hello {name}</h2>
